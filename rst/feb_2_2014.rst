@@ -3,7 +3,7 @@ First post!
 :date: 2014-02-02 6:28
 :category: programming
 :tags: python, blog, pelican, I can do this
-:author: F\. April Wright 
+:author: April Wright 
 :excerpt: Excerpt.
 
 Introduction
