@@ -49,21 +49,6 @@
 <p>I'm probably most vocally interested in the pedagogy of computer science and increasing the participation of underrepresented groups in this field. My courses taught page is frequently updated with course materials, all of which are CC-BY. Feel free to use these materials as you see fit (but attribute me!), or get in touch with me to talk more about them.</p>
 
 </article>
-
-     </div><!-- /.entry-content -->
-        <div class="comments">
-        <h2>Comments !</h2>
-            <div id="disqus_thread"></div>
-            <script type="text/javascript">
-               var disqus_identifier = "evals.html";
-               (function() {
-               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-               dsq.src = 'http://wrightaprilm.disqus.com/embed.js';
-               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-            </script>
-        </div>
-
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="wrightingapril">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
     </script>

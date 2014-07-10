@@ -23,6 +23,7 @@
 <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
 </a>
         
+        
 
             <header>
                 <h1><a href="./posts/day_one.html" id="page-title">Day One</a></h1>
@@ -48,6 +49,8 @@
 <li>Reviewing exercises from yesterday</li>
 <li>File I/O</li>
 </ul>
+<p><img alt="Learning is fun!" src="../images/ccbbdayone.jpg" /></p>
+{% img  https://twitter.com/WrightingApril/status/468497069691658240/photo/1 %}
 
 <p>Click through for <a href="./posts/day_one.html#disqus_thread">comments</a>.</p>            </article>
                 <section id="article-list">
