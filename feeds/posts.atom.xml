@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Wrighting April</title><link href="http://wrightaprilm.github.io/" rel="alternate"></link><link href="http://wrightaprilm.github.io/feeds/posts.atom.xml" rel="self"></link><id>http://wrightaprilm.github.io/</id><updated>2014-04-26T12:42:00-05:00</updated><entry><title>Parsing Evaluations</title><link href="http://wrightaprilm.github.io/posts/pars-ev.html" rel="alternate"></link><updated>2014-04-26T12:42:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-04-26:posts/pars-ev.html</id><summary type="html">&lt;h1&gt;So some people said some stuff about a thing you taught&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wrighting April</title><link href="http://wrightaprilm.github.io/" rel="alternate"></link><link href="http://wrightaprilm.github.io/feeds/posts.atom.xml" rel="self"></link><id>http://wrightaprilm.github.io/</id><updated>2014-07-12T04:00:00-05:00</updated><entry><title>Solicitation on flipping the script</title><link href="http://wrightaprilm.github.io/posts/help-out.html" rel="alternate"></link><updated>2014-07-12T04:00:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-07-12:posts/help-out.html</id><summary type="html">&lt;p&gt;So I wrote a &lt;a href="http://wrightaprilm.github.io/posts/lonely.html"&gt;blog post&lt;/a&gt; that went a little bit viral the other day. And a lot of people have asked in the past couple days what can be done to improve the atmosphere at programming meetings. I've been chewing on that pretty substantially.&lt;/p&gt;
+&lt;p&gt;I've had a lot of good discussions over the past couple days (help yourself to warm fuzzies &lt;a href="https://storify.com/WrightingApril/people-are-nice"&gt;here&lt;/a&gt; ).&lt;/p&gt;
+&lt;p&gt;Reader bioatmosphere made a very good point in the &lt;a href="http://wrightaprilm.github.io/posts/lonely.html#disqus_thread"&gt;comments&lt;/a&gt;, pulled out below:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The burden to fix things shouldn't be on you just because you're experiencing them&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;She's right, of course. And that reminded me of &lt;a href="http://www.catehuston.com/blog/2014/06/11/another-rant-about-the-pipeline/"&gt;this post&lt;/a&gt; by &lt;a href="https://plus.google.com/+CateHuston/posts"&gt;Cate Huston&lt;/a&gt;, which closes with a section called "Changing the Conversation". I'll copy the crucial bit (do read the whole thing, though) below:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Are you doing meaningful work? &lt;/p&gt;
+&lt;p&gt;Do you feel appreciated? &lt;/p&gt;
+&lt;p&gt;Do you feel respected?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And I'm going to tack on one more:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Do you feel like you're part of something?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Because I think that's what really got me: I felt like I was part of something, then I didn't. It's not just being snubbed that hurts, it's a sense of loss of a community I kinda thought I fit with.&lt;/p&gt;
+&lt;p&gt;Since I have some ears bent towards me for a bit: People who feel integrated in communities and happy at meetings, what about it? What about these communities and meetings that makes you feel appreciated? Or respected? Or part of something? And what could you do to help someone else feel that?&lt;/p&gt;
+&lt;p&gt;Get at me via whatever channel preferred. If you'd like to be anonymous, my email is on my About Me page, feel free to contact me that way.&lt;/p&gt;</summary><category term="education"></category><category term="python"></category><category term="women"></category></entry><entry><title>Parsing Evaluations</title><link href="http://wrightaprilm.github.io/posts/pars-ev.html" rel="alternate"></link><updated>2014-04-26T12:42:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-04-26:posts/pars-ev.html</id><summary type="html">&lt;h1&gt;So some people said some stuff about a thing you taught&lt;/h1&gt;
 &lt;p&gt;For the past few weeks, I've been reading and ruminating on course evaluations that we got from this round of our biocomputing &lt;a href="https://github.com/wrightaprilm/BioComputing2014"&gt;working group&lt;/a&gt;. Previous post introducing the course is &lt;a href="http://wrightaprilm.github.io/first_half.html"&gt;here&lt;/a&gt; and my thoughts on writing a good evaluation is &lt;a href="http://wrightaprilm.github.io/evals.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We changed the course a lot since last year based on evaluations. The big change is that we added homework, which many students requested. What we wanted to learn is as follows:&lt;/p&gt;
 &lt;ul&gt;
