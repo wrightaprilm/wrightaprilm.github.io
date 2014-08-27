@@ -13,7 +13,7 @@ This last weekend, John Fonner and I taught a bootcamp for scientists in [Texas 
 + Minute papers: Before leaving for lunch, and before leaving for the day, we did minute papers. On their green stickies, we had students write one thing that worked; on red, one that didn't. These were very helpful. For example, after lunch on the first day, we spent a couple minutes clarifying the dictionary  .keys() method and having a useful discussion about object methods and how to find out which objects have what methods.
 
 + The learners: We had some issues related to pitching the material with multiple levels of learners present. But I think they all had really great attitudes about that, and were aware of those challenges and sought actively to make their own experience worthwhile.
-	+ Novice learners weren't shy about asking questions. Their number was a positive sign that teaching (e.g.) very basic shell was a good idea.
+	+ Novice learners weren't shy about asking questions. The rate of questions was a positive sign that teaching (e.g.) very basic shell was a good idea.
 	+ For many experienced learners version control, unit testing, and classes were still genuinely new ideas. 
 
 
