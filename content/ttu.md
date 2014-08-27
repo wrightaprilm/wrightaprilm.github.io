@@ -6,7 +6,7 @@ This last weekend, John Fonner and I taught a bootcamp for scientists in [Texas 
 
 + Lots of skilled helpers: [Eric Bruning's](http://www.atmo.ttu.edu/bruning/) crew, Vanna Sullivan, Tony Reinhart and Aaron Hill all know their stuff, which meant learners weren't waiting long for help.  
 
-+ Online resources: We put up most of our material a [online](https://github.com/wrightaprilm/TTU). We had a lot of intermediate and advanced students, but also some novices. This is a tricky balance: we don't want students to be bored, but we don't want to lose the novice tail. At various points, when looking at people's screens, I could see more advanced learners working on testing out supplementary materials.
++ Online resources: We put up most of our material [online](https://github.com/wrightaprilm/TTU). We had a lot of intermediate and advanced students, but also some novices. This is a tricky balance: we don't want students to be bored, but we don't want to lose the novice tail. At various points, when looking at people's screens, I could see more advanced learners working on testing out supplementary materials.
 
 + Hands-on time: Particularly during the second day, we gave a lot of time to work through challenges and exercises. This meant we covered less material (we have one notebook that we didn't even get to), but the caliber of question asked by the students indicates that this time was worth it for advancing their understanding.
 
