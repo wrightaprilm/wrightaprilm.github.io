@@ -1,10 +1,16 @@
+Title: Texas Tech Bootcamp
+Date: 2014-08-30 10:20
+Category: Python
+Slug: TTU-swc
+Authors: April Wright, Eric Bruning
+
 #Texas Tech Bootcamp
 
-This last weekend, John Fonner and I taught a bootcamp for scientists in [Texas Tech's](http://www.ttu.edu/) [Atmospheric Science](http://www.atmo.ttu.edu/index.php) group.
+This last weekend, John Fonner and I taught a [Software Carpentry](http://software-carpentry.org/) bootcamp for scientists in [Texas Tech's](http://www.ttu.edu/) [Atmospheric Science](http://www.atmo.ttu.edu/index.php) group. I've brought on board [Eric Bruning](http://www.atmo.ttu.edu/bruning/) to discuss what worked and didn't in the workshop. Overall, evaluations have been really good. But we're all our own worst critics, so, vamanos!
 
 ##What worked:
 
-+ Lots of skilled helpers: [Eric Bruning's](http://www.atmo.ttu.edu/bruning/) crew, Vanna Sullivan, Tony Reinhart and Aaron Hill all know their stuff, which meant learners weren't waiting long for help.
++ Lots of skilled helpers: Eric's crew, Vanna Sullivan, Tony Reinhart and Aaron Hill all know their stuff, which meant learners weren't waiting long for help.
 
 + Online resources: We put up most of our material [online](https://github.com/wrightaprilm/TTU). We had a lot of intermediate and advanced students, but also some novices. This is a tricky balance: we don't want students to be bored, but we don't want to lose the novice tail. At various points, when looking at people's screens, I could see more advanced learners working on testing out supplementary materials.
 
@@ -19,9 +25,9 @@ This last weekend, John Fonner and I taught a bootcamp for scientists in [Texas 
 
 ##What didn't:
 
-+ Multiple levels in one room: I [April] wasn't forceful enough on this, and it came back to bite me. For an intermediate audience, not as much of the 'how-to' is needed on the nuts-and-bolts of programming with Python. For people who know C or Fortran, they can mostly pick up syntax and basics immediately. What they need is the layer on top: testing, sharing, collaborating and code reuse. They don't need the particular beast (Python), but they need to control its environment. 
++ Multiple levels in one room: I [April] wasn't forceful enough on this, and it came back to bite me. For an intermediate audience, not as much of the 'how-to' is needed on the nuts-and-bolts of programming with Python. For people who know C or Fortran, they can mostly pick up syntax and basics immediately. What they need is the layer on top: testing, sharing, collaborating and code reuse. They can master this particular beast (Python), but they need to control its environment. 
 
-A way to handle this might be to have a Python I and II session. Python I makes sure we're all on the same page. Python II is mostly practice for novices. During Python II, there could be a breakout covering importing functions as modules, classes, etc. There's a bit of self-selection bias in that that I find worrying, but maybe a checklist of things that qualify learners for an intermediate session could help.
+A way to handle this might be to have a Python I and II session. Python I makes sure we're all on the same page. Python II is mostly practice for novices. During Python II, there could be a breakout covering importing functions as modules, classes, etc. There's a bit of self-selection bias in separating learners that I find worrying, but maybe a checklist of things that qualify learners for an intermediate session could help.
 
 + Related to the first, I [April again] prepped too much material. The week before the bootcamp, I was looking at the responses to the pre-assessment and fipping out just a touch because so many learners seemed so advanced that I was worried we'd fly through everything. We didn't. 
 	+ But the overage is in an iPython notebook, so learners can walk through this at their leisure.
