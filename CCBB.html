@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Test-Driven Development for Novices</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Wrighting April </a></h1>
+                <nav><ul>
+                    <li><a href="/category/education.html">Education</a></li>
+                    <li><a href="/category/posts.html">posts</a></li>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li class="active"><a href="/category/python-education.html">Python, Education</a></li>
+                    <li><a href="/category/python-women.html">Python, women</a></li>
+                    <li><a href="/category/women.html">Women</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/CCBB.html" rel="bookmark"
+           title="Permalink to Test-Driven Development for Novices">Test-Driven Development for Novices</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-05-10T12:27:00">
+                Sat 10 May 2014
+        </abbr>
+
+        <address class="vcard author">
+                By <a class="url fn" href="/author/april-wright.html">April Wright</a>
+        </address>
+<p>In <a href="/category/python-education.html">Python, Education</a>. </p>
+
+</footer><!-- /.post-info -->      <h2>Ch-ch-changes</h2>
+<p>I've mentioned in passing before that the <a href="http://ccbb.biosci.utexas.edu/">CCBB</a> is ramping up its <a href="http://ccbb.biosci.utexas.edu/training.html">course offerings</a>. One of the new offerings is the <a href="http://ccbb.biosci.utexas.edu/summerschool.html">Big Data in Biology Summer School</a>. I'm instructing a Python <a href="http://ccbb.biosci.utexas.edu/summerschool.html#Python">session</a>.</p>
+<p>I want to try some new things.</p>
+<h2>Teaching to the test</h2>
+<p>We also teach testing in our working group. But it generally comes in quite late, and I've never been super pleased about this. This time around, we're going to start right away with some testing lite. No libraries, just some simple one function, one test programming. </p>
+<p>There's no reason that even a novice programmer can't do test-driven development. If you want your function to return whole numbers to be used in a later computation, anyone can do a simple check that their output is made of integers. If you're looking to return a value between zero and one, that's easy to check, as well. There's no reason to hold off on integrating the logic of unit testing: What <em>must</em> be true about this output for it to be usable? What must be true about my input for my computation to function?</p>
+<p>Simple data checking is something that is easy to implement early and often. Self-skepticism about our results is a skill I can either build or scare into students. Actual testing libraries can be covered at the end of the course. Not that anyone is going to use them, anyway.</p>
+<p>My plan is that for the first exercises, there are no tests. Then, I'll ask them to add a simple test of something specific (such as, add a line of code that ensures your output is a number, and prints a nasty message if it isn't). On the next assignment, I'll leave it more vague (Decide what must be true about the output of your function and test it). And lastly, the training wheels come off and I tell them to test as appropriate in their script. </p>
+<p>I think I can pull this off. Is anyone else teaching test-driven development for novices?</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="twitter.com/wrightingapril">Twitter</a></li>
+                            <li><a href="https://github.com/wrightaprilm">Github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'wrightaprilm';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
