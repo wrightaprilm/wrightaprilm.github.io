@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wrighting April</title><link href="http://wrightaprilm.github.io/" rel="alternate"></link><link href="http://wrightaprilm.github.io/feeds/all.atom.xml" rel="self"></link><id>http://wrightaprilm.github.io/</id><updated>2014-07-12T04:00:00-05:00</updated><entry><title>Solicitation on flipping the script</title><link href="http://wrightaprilm.github.io/posts/help-out.html" rel="alternate"></link><updated>2014-07-12T04:00:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-07-12:posts/help-out.html</id><summary type="html">&lt;p&gt;So I wrote a &lt;a href="http://wrightaprilm.github.io/posts/lonely.html"&gt;blog post&lt;/a&gt; that went a little bit viral the other day. And a lot of people have asked in the past couple days what can be done to improve the atmosphere at programming meetings. I've been chewing on that pretty substantially.&lt;/p&gt;
+&lt;p&gt;I've had a lot of good discussions over the past couple days (help yourself to warm fuzzies &lt;a href="https://storify.com/WrightingApril/people-are-nice"&gt;here&lt;/a&gt; ).&lt;/p&gt;
+&lt;p&gt;Reader bioatmosphere made a very good point in the &lt;a href="http://wrightaprilm.github.io/posts/lonely.html#disqus_thread"&gt;comments&lt;/a&gt;, pulled out below:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The burden to fix things shouldn't be on you just because you're experiencing them&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;She's right, of course. And that reminded me of &lt;a href="http://www.catehuston.com/blog/2014/06/11/another-rant-about-the-pipeline/"&gt;this post&lt;/a&gt; by &lt;a href="https://plus.google.com/+CateHuston/posts"&gt;Cate Huston&lt;/a&gt;, which closes with a section called "Changing the Conversation". I'll copy the crucial bit (do read the whole thing, though) below:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Are you doing meaningful work? &lt;/p&gt;
+&lt;p&gt;Do you feel appreciated? &lt;/p&gt;
+&lt;p&gt;Do you feel respected?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And I'm going to tack on one more:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Do you feel like you're part of something?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Because I think that's what really got me: I felt like I was part of something, then I didn't. It's not just being snubbed that hurts, it's a sense of loss of a community I kinda thought I fit with.&lt;/p&gt;
+&lt;p&gt;Since I have some ears bent towards me for a bit: People who feel integrated in communities and happy at meetings, what about it? What about these communities and meetings that makes you feel appreciated? Or respected? Or part of something? And what could you do to help someone else feel that?&lt;/p&gt;
+&lt;p&gt;Get at me via whatever channel preferred. If you'd like to be anonymous, my email is on my About Me page, feel free to contact me that way.&lt;/p&gt;</summary><category term="education"></category><category term="python"></category><category term="women"></category></entry><entry><title>Thoughts on my first programming conference</title><link href="http://wrightaprilm.github.io/posts/lonely.html" rel="alternate"></link><updated>2014-07-10T07:40:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-07-10:posts/lonely.html</id><summary type="html">&lt;p&gt;I went to SciPy this week. I'd never been to a programming conference before, and they featured a lot of education talks. &lt;/p&gt;
+&lt;p&gt;I wish I hadn't.&lt;/p&gt;
+&lt;p&gt;Last night, at the &lt;a href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt; mixer, a grand total of 5 men shook my husband's hand and ignored mine. My total of new people met is a dismal ten. Compare it to the &lt;a href="http://evolution2014.org/"&gt;Evolution meetings&lt;/a&gt;, which is 'my' meeting, where I met upwards of 40 new people, had a blast, and was treated by all participants like a member of the community.&lt;/p&gt;
+&lt;p&gt;I was reminded of a question my friend &lt;a href="https://twitter.com/fineline179"&gt;Steve Young&lt;/a&gt; asked me a while back: "What makes some women stick it out and be awesome [in tech]?" I'm going to turn the question around a bit. It's easy to be 'awesome'. Lots of women are doing 'awesome' things. But I could have sat in my office and worked all week, rather than attending this meeting. I could have done far more 'awesome' alone, and I wouldn't have had my face rubbed in the fact that I'm different. I'd feel a lot less alone had I spent the week hanging out alone.&lt;/p&gt;
+&lt;p&gt;I think the real question is :&lt;/p&gt;
+&lt;h2&gt;What to tech conferences have to offer to diverse participants?&lt;/h2&gt;
+&lt;p&gt;For the record, I hate the term 'diverse participants'. It doesn't make sense, as a term. And I'm not diverse. I'm middle class, educated, straight and white like almost anyone else at the meeting.&lt;/p&gt;
+&lt;p&gt;As I was crying myself to sleep last night, my husband asked me a very good question: 'Why do you hang out with these people?'. And I don't have an answer for that. I don't really know what I expected. I know tech is really sexist; I've heard all the anecdotes and seen the numbers and figures. But we have such good female participation at UT in our &lt;a href="https://github.com/wrightaprilm/BioComputing2014"&gt;course&lt;/a&gt;. I guess I thought I could be different and I could make this be fun and exciting. I'm young and naive and bull-headed and I thought I could break the mold. &lt;/p&gt;
+&lt;p&gt;And of course I couldn't. &lt;/p&gt;
+&lt;p&gt;And that's the kicker. I didn't have a good time and I won't be attending future programming conferences, unless they're explicitly for women. I have no incentive to. I didn't feel lonely as a pythonista until this week. I didn't feel like I didn't belong before this week. Before this week, I had a lot of friends who like what I'm doing and think I'm cool. Now I know that's an isolated thing.&lt;/p&gt;
+&lt;p&gt;When I go to the Evolution meetings, I'm greeted by people like &lt;a href="https://twitter.com/nhcooper123"&gt;Natalie Cooper&lt;/a&gt;, &lt;a href="https://twitter.com/phylorich"&gt;Rich FitzJohn&lt;/a&gt; and &lt;a href="https://twitter.com/trayc7"&gt;Tracy Heath&lt;/a&gt; who are eager to reach down and help people up. People who make opportunities and build communities. &lt;/p&gt;
+&lt;p&gt;In programming, I'm greeted by people who don't want to shake my hand.&lt;/p&gt;
+&lt;p&gt;Note: This year, SciPy had a &lt;a href="https://conference.scipy.org/scipy2014/code_of_conduct/"&gt;Code of Conduct&lt;/a&gt;, which is great. And there was a women in science luncheon, which was also good, if too short to allow actual networking and conversation. I do think there are some good people working on this issue, and maybe it'll be better in the future. But I have a strong prior against that change being big enough to get me to come back.&lt;/p&gt;</summary><category term="personal"></category><category term="python"></category><category term="women"></category></entry><entry><title>Wrap-up</title><link href="http://wrightaprilm.github.io/posts/ccbb_wrap.html" rel="alternate"></link><updated>2014-05-22T04:40:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-05-22:posts/ccbb_wrap.html</id><summary type="html">&lt;p&gt;This week was the CCBB's first ever Big Data in Biology summer school. I was the Python instructor. 4x3-hour-days, 16 students. Fun.&lt;/p&gt;
+&lt;p&gt;What worked:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Topics: I think we had a good covering of what really matters in programming&lt;/li&gt;
+&lt;li&gt;Red/Green stickies: Red sticky on laptop = trouble, green = all good. Really efficient.&lt;/li&gt;
+&lt;li&gt;Bite-sized materials. I largely did one markdown document per topic (one on Pandas importing and slicing, one on missing data filtration and replacement, one on plotting). Helped keep me on track, ensure exercise breaks and keep the schedule moving.&lt;/li&gt;
+&lt;li&gt;Integrating testing: I think by-and-large, most people were comfortable with the logic of self-skepticism by the end of the course, even if we didn't get to actual formal testing.&lt;/li&gt;
+&lt;li&gt;Class size: We never had so many people to help that two of us couldn't manage efficiently.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What didn't:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Installs: I know other instructors don't support Windows, and it's tempting to just give up. I do feel like GitBash is a big help on this front, but working at the interpreter in iPython was persistently a problem. &lt;/li&gt;
+&lt;li&gt;Trying to go off-script: I should really know by now that if I go off-script and something doesn't work out, I will get mad flustered. But I don't know this. And I try it all the time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Neutral:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Git: Still kind of much for novices. Since this was a Python course, we more-or-less used it to disseminate materials. I'm not sure I would do try this way of managing materials again without a full session on Git. But ... multiple people had started their own repos for personal scripts and were pushing to them by the end of the workshop. So unclear.&lt;/li&gt;
+&lt;li&gt;The room: It was nice, I think the temperature was generally nice, and it had appropriate hook-ups for my computer. Screen mirroring had a slick set-up, too. But power strips were an issue.&lt;/li&gt;
+&lt;li&gt;The schedule: There was some pretty obvious fatigue, particularly among students who were taking morning classes by the end. Not sure how to manage this, because I do think all the stuff we went over was important. I saved regex for the last day, since those are easy to visually understand via RegexPal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Overall, I had a good time. We'll see in a couple weeks what the students thought.&lt;/p&gt;</summary><category term="education"></category><category term="python"></category></entry><entry><title>Day One</title><link href="http://wrightaprilm.github.io/posts/day_one.html" rel="alternate"></link><updated>2014-05-19T11:15:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-05-19:posts/day_one.html</id><summary type="html">&lt;h2&gt;What worked&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Base Python: People generally found Python intuitive &lt;/li&gt;
+&lt;li&gt;Hands-On: We did a lot of hands-on (about 25 minute per hour, plus a break every hour and a half)&lt;/li&gt;
+&lt;li&gt;Minute papers: We  got a lot of good feedback from these&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What didn't&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Installs: A few people hadn't installed things&lt;/li&gt;
+&lt;li&gt;Git: I think this was a little much for first thing for total novices, but we mostly got this working&lt;/li&gt;
+&lt;li&gt;I got turned around and a bit flustered with helping people in the start, getting everyone used to the course website + etherpad. I still get flustered.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What's up tomorrow:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Syncing course repos with personal, and pushing a first bit of text&lt;/li&gt;
+&lt;li&gt;Reviewing exercises from yesterday&lt;/li&gt;
+&lt;li&gt;File I/O&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Learning is fun!" src="./../pictures/ccbbdayone.jpg" /&gt;&lt;/p&gt;</summary><category term="education"></category><category term="python"></category></entry><entry><title>Seeing clearly</title><link href="http://wrightaprilm.github.io/posts/inclusivity.html" rel="alternate"></link><updated>2014-05-16T21:30:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-05-16:posts/inclusivity.html</id><summary type="html">&lt;p&gt;I've recently started applying for postdocs. And I've realized one thing:&lt;/p&gt;
+&lt;h2&gt;My experiences with sexual harassment have shaped the scientist I am and the mentor I want to be.&lt;/h2&gt;
+&lt;p&gt;I've known for a long time this is a big thing for me. It wasn't until I started drafting research statements that I realized how strongly I feel on this particular topic, not as an aside to my work, but as a cornerstone of it. If you've navigated here because I've linked you, or the Hillis Lab site has linked you, you need to know this:&lt;/p&gt;
+&lt;h2&gt;Inclusivity is foundational to me.&lt;/h2&gt;
+&lt;p&gt;Outreach has been important to me. As I move through each stage of a leaky pipeline, outreach and mentoring will only become more important. &lt;/p&gt;
+&lt;p&gt;I grew up being a sci-fi geek. I was 'one of the guys' by virtue of liking the things I did. At every transition in my life, I've learned that I'm not alone, but that other women were tired of harassment or weirdness and didn't pursue those interests. I feel like I've tolerated a lot of garbage because, from youth, I've expected to be treated that way. If there's anything I've taken from the past few years in graduate school, it's that there are women who want to be academics, and for a variety of reasons, feel unwelcome. And for a skilled young person, the incentive to stick around when your treatment is unfair is tiny.&lt;/p&gt;
+&lt;p&gt;I got into the clubhouse. I'm going to help other people in. And that's an inextricable part of who I am.&lt;/p&gt;</summary><category term="education"></category><category term="women"></category><category term="feminism"></category></entry><entry><title>Integrating testing in a zero-entry framework</title><link href="http://wrightaprilm.github.io/posts/integrating-testing-in-a-zero-entry-framework.html" rel="alternate"></link><updated>2014-05-10T12:27:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-05-10:posts/integrating-testing-in-a-zero-entry-framework.html</id><summary type="html">&lt;h2&gt;Ch-ch-changes&lt;/h2&gt;
+&lt;p&gt;I've mentioned in passing before that the &lt;a href="http://ccbb.biosci.utexas.edu/"&gt;CCBB&lt;/a&gt; is ramping up its &lt;a href="http://ccbb.biosci.utexas.edu/training.html"&gt;course offerings&lt;/a&gt;. One of the new offerings is the &lt;a href="http://ccbb.biosci.utexas.edu/summerschool.html"&gt;Big Data in Biology Summer School&lt;/a&gt;. I'm instructing a Python &lt;a href="http://ccbb.biosci.utexas.edu/summerschool.html#Python"&gt;session&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I want to try some new things.&lt;/p&gt;
+&lt;h2&gt;Teaching to the test&lt;/h2&gt;
+&lt;p&gt;We also teach testing in our working group. But it generally comes in quite late, and I've never been super pleased about this. This time around, we're going to start right away with some testing lite. No libraries, just some simple one function, one test programming. &lt;/p&gt;
+&lt;p&gt;There's no reason that even a novice programmer can't do test-driven development. If you want your function to return whole numbers to be used in a later computation, anyone can do a simple check that their output is made of integers. If you're looking to return a value between zero and one, that's easy to check, as well. There's no reason to hold off on integrating the logic of unit testing: What &lt;em&gt;must&lt;/em&gt; be true about this output for it to be usable? What must be true about my input for my computation to function?&lt;/p&gt;
+&lt;p&gt;Simple data checking is something that is easy to implement early and often. Self-skepticism about our results is a skill I can either build or scare into students. Actual testing libraries can be covered at the end of the course. Not that anyone is going to use them, anyway.&lt;/p&gt;
+&lt;p&gt;My plan is that for the first exercises, there are no tests. Then, I'll ask them to add a simple test of something specific (such as, add a line of code that ensures your output is a number, and prints a nasty message if it isn't). On the next assignment, I'll leave it more vague (Decide what must be true about the output of your function and test it). And lastly, the training wheels come off and I tell them to test as appropriate in their script. &lt;/p&gt;
+&lt;p&gt;I think I can pull this off. Is anyone else teaching test-driven development for novices?&lt;/p&gt;</summary><category term="education"></category><category term="python"></category></entry><entry><title>Studying student comfort</title><link href="http://wrightaprilm.github.io/posts/hello_ladies.html" rel="alternate"></link><updated>2014-05-03T02:20:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-05-03:posts/hello_ladies.html</id><summary type="html">&lt;p&gt;I blog a lot about the course that I co-run. One thing i haven't blogged extensively about is the students themselves. I've noticed as the semester goes on, our course becomes more female. We started out with about a 50-50 sex ratio in the room. As we moved through basic Python section of the course and into the "special topics" part, that ratio changed pretty dramatically.&lt;/p&gt;
+&lt;p&gt;Women came to a lot more sessions than men. Just doing cursory headcounts, by the end of basic Python, about three-quarters of attendees were female. In our session on high-performance cluster computing with TACC, there was one lone dude in the a room full of women (besides Ben, my co-instructor, and Benni, the guy teaching the session). Same story in this week's local BLAST session.&lt;/p&gt;
+&lt;h2&gt;Why do women come to more classes than men?&lt;/h2&gt;
+&lt;p&gt;I have a few hypotheses about what's going on here, and I'd like feedback for how to test these. &lt;/p&gt;
+&lt;h3&gt;Hypothesis one:&lt;/h3&gt;
+&lt;p&gt;Nothing to see here; it's a fluke. My inclination is that this is unlikely to be true. I couldn't find specific stats on the sex ratios in all of the graduate programs that from which students come, but overall, the College of Natural Science &lt;a href="http://www.utexas.edu/academic/ima/sites/default/files/RPT_ENRL_FA11_HDCE_HCbyDisc_Class_Eth_Gender.pdf"&gt;skews male&lt;/a&gt;. Most of our students are from the Evolution, Ecology and Behavior program, and the Institute of Cell and Molecular biology. These departments have more equal sex ratios, and EEB leans towards female-majority. But I wouldn't expect the aggregate of these departments to produce as strong a female bias as is observed.&lt;/p&gt;
+&lt;h3&gt;Hypothesis two:&lt;/h3&gt;
+&lt;p&gt;There's been a lot made of the confidence gap. [&lt;em&gt;Ed. Note&lt;/em&gt;: I don't love the term because the confidence gap is caused by sexism and unequal treatment of women, and it seems like talking about this gap talks around the root cause.] Is it possible that women perceive themselves to be less capable of self-instruction than men?&lt;/p&gt;
+&lt;h3&gt;Hypothesis three:&lt;/h3&gt;
+&lt;p&gt;Do men come to graduate school with more of a computational background than women? It's not a secret that there are &lt;a href="http://economix.blogs.nytimes.com/2013/11/15/women-gain-in-some-stem-fields-but-not-computer-science/?_php=true&amp;amp;_type=blogs&amp;amp;_r=0"&gt;fewer female computer science bachelor's earners than male&lt;/a&gt;. But we're not instructing computer scientists. We're instructing biologists. And it's far slipperier to get your hands on data about how many biologists receive training in computer science. Research by &lt;a href="https://peerj.com/articles/285/"&gt;Barraquand et al.&lt;/a&gt; suggests that training in overall quantitative topics is considered inadequate by many ecologists. A look over the getting to know you survey that we did did at the beginning of the course suggests that men and women come to our working group with similar levels of experience. My feeling is, therefore, that this is unlikely to be true. But it's possible that men had an overall higher familiarity with programming as a discipline feel that they need less training. Could be an interaction between this hypothesis and hypothesis two.&lt;/p&gt;
+&lt;h3&gt;Hypothesis four:&lt;/h3&gt;
+&lt;p&gt;Women seek training more because they feel they need it to get ahead. I know, personally, that I've sought out formal training in the past because I felt that I wouldn't be taken seriously, as a woman, unless I had some sort of seal-of-approval verifying my skills. I see no reason that this would be untrue for other women.&lt;/p&gt;
+&lt;h3&gt;Hypothesis five:&lt;/h3&gt;
+&lt;p&gt;Our course environment might be more conducive to women's comfort. Half our instructional staff (but not our guest speaker line-up) is female. I'm pretty outspokenly feminist. We're not scary like some of the computer science people are. Ben and I are good friends, most of the guest speakers are my friends, the (female) TA is my friend. And I'll personally vouch for their character. None of us will grope or sexually harass students (like I've been by a teaching assistant in the course of my computational education). It's been recently suggested that women don't go into tech because &lt;a href="http://www.nytimes.com/2014/04/06/technology/technologys-man-problem.html?smid=tw-share"&gt;the men in tech are jerks&lt;/a&gt;. I think there's something to this, and the fact that we aren't creepy jerks might be helping us out here.&lt;/p&gt;
+&lt;h2&gt;&lt;/End spitballing&gt;&lt;/h2&gt;
+&lt;p&gt;I'd like to apply some data to this problem. I've currently got some feelers out for people who study this type of thing. If you know someone who works on this type of research, or are someone works on this type of research, get in touch! I'd love to hear from you.&lt;/p&gt;</summary><category term="education"></category><category term="python"></category><category term="women"></category><category term="feminism"></category></entry><entry><title>Parsing Evaluations</title><link href="http://wrightaprilm.github.io/posts/pars-ev.html" rel="alternate"></link><updated>2014-04-26T12:42:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-04-26:posts/pars-ev.html</id><summary type="html">&lt;h1&gt;So some people said some stuff about a thing you taught&lt;/h1&gt;
+&lt;p&gt;For the past few weeks, I've been reading and ruminating on course evaluations that we got from this round of our biocomputing &lt;a href="https://github.com/wrightaprilm/BioComputing2014"&gt;working group&lt;/a&gt;. Previous post introducing the course is &lt;a href="http://wrightaprilm.github.io/first_half.html"&gt;here&lt;/a&gt; and my thoughts on writing a good evaluation is &lt;a href="http://wrightaprilm.github.io/evals.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We changed the course a lot since last year based on evaluations. The big change is that we added homework, which many students requested. What we wanted to learn is as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What do students enjoy about the class?&lt;/li&gt;
+&lt;li&gt;What do they not like?&lt;/li&gt;
+&lt;li&gt;What can we do to support learning?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So let's take a look at the results.&lt;/p&gt;
+&lt;h3&gt;We moved both too fast and too slow&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;There's wide variance in whether the course moved too fast. Novices think it did, more experienced people think it didn't. Hardly a surprise. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What this suggests&lt;/em&gt;: There is some demand in the UT community for intermediate Python. I'm not super shocked at this, as there's no        real formal curriculum for learning specific languages at UT (beyond a CS course that is literally impossible for non-CS majors to      enroll in). The &lt;a href="http://ccbb.biosci.utexas.edu/"&gt;CCBB&lt;/a&gt; is ramping up its &lt;a href="http://ccbb.biosci.utexas.edu/ training.html"&gt;training programs&lt;/a&gt; and there might be some room there for development of courses that assume a higher baseline of knowledge and cover more      breadth. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Homework helps. So do code fragments. Students who looked at code outside of class, did homework and reviewed notes are more confident in their ability to complete programming tasks on their own or with a little Google. Hardly a revelation.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What this suggests&lt;/em&gt;: We currently exist outside of any sort of incentive structure. We can't give credit, nor can we levy consequences         for not doing your homework. If we're going to continue to operate outside the normal academic structure, we need to find some way to       motivate students to think about this material outside of class. Perhaps some sort of certificate? &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Students who need to use programming for their work learned more stuff. It's very clear that "I need to graduate someday" or "I don't wanna post-doc forever" are great motivators. But early-stage graduate students (who have the time to be in class) don't have the data to apply their learning off the bat.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What this suggests&lt;/em&gt;: We considered making it mandatory to have a data set that you're working with to join our class/support group.        But we have no way of enforcing this. I think the thing to do is to make a bank of example data sets, and assign people without data a      buddy and a dataset. Part of the homework could be to apply some aspect of the class material to the fake data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;People love Python, Pandas and in-class exercises. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What this suggests&lt;/em&gt;: #Pythonista4Life. Also, perhaps we should switch to a two-hour session. Right now, we do a 1.5-hour session. We       talk about some topic for about a half-hour to 45 minutes, and then take an exercise application break. Then we talk some more.     Perhaps we could switch to a format with two half-hour talk sessions, and two half-hour exercise breaks. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We were mostly good on jargon, except when we weren't. Most students said that we didn't use jargon and that they didn't feel lost very often. A couple students have a more expansive definition of jargon, including concepts like loops.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What this suggests&lt;/em&gt;: I'm not really sure. There are some words you just have to know if you want to do programming. We generally       provide some kind of &lt;a href="https://github.com/wrightaprilm/BioComputing2014/blob/master/lesson_2/CheatSheet.md"&gt;cheatsheet&lt;/a&gt; with lessons.        There's a hard floor on how simple we can make things, and I think we've about hit it. &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There's the five-cent tour of our survey results, folks. Overall, we did well this year, in particular since we had some tough circumstances towards the start of the year (two lectures lost due to snow days). I feel positive about our evaluation format, as well. We got the information that we set out to get, and now we know what to work on for next year. I'll definitely be using these evaluation forms again. I don't want to share results publicly, since some are signed, but ping me if you want to talk in more depth about evaluations and results.&lt;/p&gt;</summary><category term="education"></category><category term="python"></category></entry><entry><title>Wrighting Evaluations</title><link href="http://wrightaprilm.github.io/posts/first_half.html" rel="alternate"></link><updated>2014-04-07T04:15:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-04-07:posts/first_half.html</id><summary type="html">&lt;p&gt;As a lot of readers may know, I teach a biological computing course, with my labmate Ben. We're a weird little entity: we're endorsed by the university's &lt;a href="http://ccbb.biosci.utexas.edu/semesterlong.html"&gt;Center for Computational Biology and Bioinformatics&lt;/a&gt;. We can't offer course credit, nor can we incentivize participation. This creates a really odd dynamic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Students can come learn&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;But they have to be self-motivated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Students can get code feedback&lt;ul&gt;
+&lt;li&gt;But they're putting in their own time and receiving no credit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Students can come hang out and get to know the UT biological programming community&lt;ul&gt;
+&lt;li&gt;But again, this is time out of their day&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We break our semester into two halves. As you can see on our &lt;a href="https://github.com/wrightaprilm/BioComputing2014"&gt;site&lt;/a&gt;, there's a bit of basic python for the first few sessions. The second half is made up of speakers from the UT community coming to talk about how they use computation to make their work easier, faster, more reproducible, etc.&lt;/p&gt;
+&lt;p&gt;We also invite people for beer. To foster community, of course.&lt;/p&gt;
+&lt;p&gt;So that's our intro course. We're sending out the evaluation surveys for the first half of the class in a bit here, so I'll be back with some analytics on retention in a couple weeks.&lt;/p&gt;</summary></entry><entry><title>Wrighting Evaluations</title><link href="http://wrightaprilm.github.io/posts/wrighting_evals.html" rel="alternate"></link><updated>2014-03-30T02:34:00-05:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-03-30:posts/wrighting_evals.html</id><summary type="html">&lt;h2&gt;Writing a good evaluation is hard.&lt;/h2&gt;
+&lt;p&gt;People often tell me to pick a couple things I want students in a course to have known and ask if they learned them. I think practically this is useful, but doesn't get at the full picture. There are lots of reasons a student might not learn something in a semester-long course. For instance, a few students have communicated to me that their PIs don't think it's worth it to take a course on computing, and won't give them an hour and a half in the afternoon to come to class, resulting in doing  a lot of learning on their own. Some people like Facebook more than doing programming exercises.&lt;/p&gt;
+&lt;p&gt;What evaluation should really get at is what the instructors and other course facilitators could do to support learners. Which of our materials are students using? Which are they not? Are there some lectures that don't go well? How is our balance of exercise to talk time? What practical things could we do to improve the course?&lt;/p&gt;
+&lt;p&gt;Our round of evaluations following the first offering of the course went pretty well. People over all liked the course. They liked cheatsheets of core programming concepts from each lecture. They wanted homework to be assigned. They wanted more in-class exercises.&lt;/p&gt;
+&lt;p&gt;So this time around, we offered more in-class exercises. We assigned homework. We made cheatsheets for lectures that didn't previously have them (i.e. &lt;a href="https://github.com/wrightaprilm/BioComputing2014/blob/master/lesson_5/pandas_dtypes.md"&gt;Pandas types&lt;/a&gt; and a &lt;a href="https://github.com/wrightaprilm/BioComputing2014/blob/master/lesson_5/pandas_slicing.svg"&gt;visual cheatsheet&lt;/a&gt; to slicing/indexing. In short, this was a better course for long-term learning.&lt;/p&gt;
+&lt;h2&gt;Our Solution&lt;/h2&gt;
+&lt;p&gt;I picked a few main things that I wanted to know from students:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What was the level of effort they put into the course?
+    +Was there anything we could do to get them to increase that level of effort?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How did the students feel during class (lost, bored, etc)?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What can we do to improve their experience?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can they do some basic Python tasks?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If not, what could we do help them pick up concepts?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Did they &lt;em&gt;like&lt;/em&gt; programming?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If not, then we don't like you and you can't come to my birthday party.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Challenges&lt;/h2&gt;
+&lt;p&gt;Getting at what learners learned is hard. We've gotten some feedback in the form of homeworks. Turned in homeworks were consistently great, but most students didn't actually turn in homework weekly. More on this in a minute. I included four questions on simple tasks. You can see the form &lt;a href="https://docs.google.com/forms/d/13v2fGt48H_3i5FlPIRNFyNKXXiUtS0yArO6ikYTWm70/viewform"&gt;here&lt;/a&gt;. I decided to go for simple questions: can you write a loop? Can you write a function? &lt;/p&gt;
+&lt;p&gt;I'm not sure about this approach. &lt;a href="http://software-carpentry.org/bootcamps/post-instructor.html"&gt;Software Carpentry&lt;/a&gt; asks some more detailed questions in their instructor questionnaire. I'm curious how that plays out. I was worried that learners would be intimidated by involvement or detail and might underestimate their abilities. It seems like learners underestimate their ability to program more than any other skill I've ever encountered. I'm interested to see the results of their evaluations. If the more detailed questionnaires work out, I'd love to incorporate those types of questions into my surveys. I really just want to get good results.&lt;/p&gt;
+&lt;p&gt;Another challenge we encountered was asking about jargon. Preliminary results indicate that we use too much jargon and that this makes class hard to follow. But detailed comments left by one learner indicates that jargon might be so expansive as to include the term "loop." Not really sure about what to do on that one.&lt;/p&gt;
+&lt;h2&gt;Future&lt;/h2&gt;
+&lt;p&gt;Keep an eye on - I'll post a more detailed summary of the evals once we have a little more participation.&lt;/p&gt;</summary><category term="education"></category></entry><entry><title>SSC Short Course Wrap Up</title><link href="http://wrightaprilm.github.io/posts/ssc_wrap.html" rel="alternate"></link><updated>2014-02-25T09:15:00-06:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-02-25:posts/ssc_wrap.html</id><summary type="html">&lt;h3&gt;Thanks so much to all the participants in the SSC spring Python short course&lt;/h3&gt;
+&lt;p&gt;Materials can be found &lt;a href="../../CourseMaterials.zip"&gt;here&lt;/a&gt;
+Answers, equipment set-up and FAQs can be found &lt;a href="../../post-class.zip"&gt;here&lt;/a&gt;.&lt;/p&gt;</summary><category term="education"></category><category term="python"></category><category term=""></category></entry><entry><title>SSC Short Course Materials</title><link href="http://wrightaprilm.github.io/posts/ssc_short.html" rel="alternate"></link><updated>2014-02-24T10:35:00-06:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-02-24:posts/ssc_short.html</id><summary type="html">&lt;h2&gt;&lt;a href="http://wrightaprilm.github.io/ssc.html"&gt;Materials for spring 2014 SSC Python Short Course&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;Table of Contents:&lt;/h2&gt;
+&lt;p&gt;+Introduction
+Variables and arithmetic
+Loops and lists
+File Input and output
+Pandas&lt;/p&gt;
+&lt;p&gt;Download course zip &lt;a href="../CourseMaterials.zip"&gt;file&lt;/a&gt;&lt;/p&gt;</summary><category term="education"></category><category term="python"></category></entry><entry><title>On Novices</title><link href="http://wrightaprilm.github.io/posts/novices.html" rel="alternate"></link><updated>2014-02-20T05:40:00-06:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-02-20:posts/novices.html</id><summary type="html">&lt;h2&gt;Or: Why talking through it makes me a better programmer&lt;/h2&gt;
+&lt;h3&gt;(And maybe a better person)&lt;/h3&gt;
+&lt;p&gt;If you know me, probably something you know about me is that I like to teach. 
+Happiness is nothing if not shared; I like to share.&lt;/p&gt;
+&lt;p&gt;A lot of people ask me why I think that teaching is so much. And at the end of 
+the day, the only thing I can really tell them is that the world is big. Really 
+big. You just won't believe how vastly hugely mindbogglingly big it is.&lt;/p&gt;
+&lt;p&gt;(If we're going to start this blog with a positive jam, let's go to the big man
+himself.)&lt;/p&gt;
+&lt;p&gt;There's something incredibly satisfying about seeing the lights go on and the 
+wheels start to turn when someone gets their first loop. As an academic, my life
+is pretty often an exercise in delayed gratification. But when you've done a 
+good job teaching, your student goes from a pupil to a &lt;em&gt;colleague&lt;/em&gt;. That's 
+powerful stuff. Makes my day, right there.&lt;/p&gt;
+&lt;p&gt;Of course, there's also the altruistic stuff: you helped someone get to where
+they needed to be, you're helping them make a better project. But feeling good
+keeps you coming back.&lt;/p&gt;
+&lt;p&gt;But if you're not convinced, I've compiled a list of reasons why teaching skills
+(not just programming - could be any skill) to novices helps us all be better:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I am a more articulate person for having to break ideas down into bite-sized
+pieces&lt;/li&gt;
+&lt;li&gt;I am a more patient person for helping someone take their first steps.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;I am a more conscientious programmer for seeing all the creative solutions
+my students-cum-colleagues come up with.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;I'm better at documenting code, knowing someone who needs help might read it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;I actually kind of like the sound of my own voice. That's something I never
+would have said when I started graduate school.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="education"></category><category term="python"></category></entry><entry><title>Welcome!</title><link href="http://wrightaprilm.github.io/posts/welcome.html" rel="alternate"></link><updated>2014-02-16T06:00:00-06:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-02-16:posts/welcome.html</id><summary type="html">&lt;h2&gt;New Blog!&lt;/h2&gt;
+&lt;p&gt;Well, here we are. I've created a new blog and website with github pages and pelican. Keep an eye on for a integration of my science, programming and teaching.&lt;/p&gt;</summary></entry><entry><title>Hello, world</title><link href="http://wrightaprilm.github.io/posts/hello_world.html" rel="alternate"></link><updated>2014-02-16T03:20:00-06:00</updated><author><name>April Wright</name></author><id>tag:wrightaprilm.github.io,2014-02-16:posts/hello_world.html</id><summary type="html">&lt;h2&gt;Hello World&lt;/h2&gt;</summary></entry></feed>
