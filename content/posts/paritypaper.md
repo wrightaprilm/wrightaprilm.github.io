@@ -22,8 +22,11 @@ The [iPython Notebook](http://ipython.org/notebook.html) is a really great tool 
 
 The paper had three main analysis:
 1) Running [BiSSE](http://www.zoology.ubc.ca/~fitzjohn/diversitree.docs/) on four time-scaled phylogenetic trees to look at the effect of topology and branch length on the conclusions reached.
+
 2) Running BiSSE on each of these trees with a variety of parameters to look at the effects of the exact model settings on the conclusion reached.
+
 3) Using [PAUP](http://paup.csit.fsu.edu/) to count changes on the tree.
+
 
 There were also little ancillariy analyses that we did, for example, looking at Robinson-Foulds distances between trees. These aren't the main thrust of the paper and are provided as iPython notebooks.
 
@@ -35,7 +38,7 @@ Then, we time-scale the trees. Pyron and Burbink used [treePL](https://github.co
 
 If you don't want to bother with these two long steps, the trees are in the Trees directory of the repository.
 
-You can do this in a couple ways, from my repository. The easiest is to open a terminal, change directories into the repository and type 'make'. This will output for you results of BiSSE's parameter fitting as csv files and newick strings of the trees with the marginal likelihoods of ancestral states written to the nodes. You can then visualize these trees in FigTree or your preferred tree-viewing software.
+You can run BiSSE in a couple ways, from my repository. The easiest is to open a terminal, change directories into the repository and type 'make'. This will output for you results of BiSSE's parameter fitting as csv files and newick strings of the trees with the marginal likelihoods of ancestral states written to the nodes. You can then visualize these trees in FigTree or your preferred tree-viewing software.
 
 ##Goal Two: Parameter Sampling
 
