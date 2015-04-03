@@ -52,9 +52,9 @@ We just provided the PAUP file for this. Donezo.
 
 This paper was a massive effort. I didn't anticipate how big of an undertaking it would be just to do the research. But I was strongly motivated by pedagogy - a new student in my lab wanted to learn computation, and she really took ownership of this project. She stepped up, and that made it easy for me to step up on a non-dissetation project in my last year of grad school while pregnant.  See her post in the coming days about learning by doing.
 
-About the reproducibility ... I intended to do more. But, right now, I have a paper in review that I'm massively proud of. You can reproduce it. Katie learned a lot. I learned some skills I wanted (make, mostly) and made some resources I think will be helpful for novice users. 
+About the reproducibility ... I intended to do more. But, right now, I have a paper in review that I'm massively proud of. You can reproduce it. Katie learned a lot. I learned some skills I wanted (make, mostly) and made some resources I think will be helpful for novice users. I'm not a martyr to reproducibility: I'm going to do the best job that I can on it and go home at the end of the day. And that's what I'd like readers, esecially novice readers to take away: your project doesn't need to be perfectly, fully reproducible to be useful. Do your best. Learn something new. Don't get bogged down in the fear that the Twitterverse will chuckle at your puny attempt at a pipeline.
 
-Good enough. I deserve a beer. Maybe next month.
+Do good enough. I did. I deserve a beer. Maybe next month.
 
 
  
