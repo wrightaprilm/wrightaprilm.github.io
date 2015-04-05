@@ -22,8 +22,11 @@ The [iPython Notebook](http://ipython.org/notebook.html) is a really great tool 
 
 The paper had three main analysis:
 1) Running [BiSSE](http://www.zoology.ubc.ca/~fitzjohn/diversitree.docs/) on four time-scaled phylogenetic trees to look at the effect of topology and branch length on the conclusions reached.
+
 2) Running BiSSE on each of these trees with a variety of parameters to look at the effects of the exact model settings on the conclusion reached.
+
 3) Using [PAUP](http://paup.csit.fsu.edu/) to count changes on the tree.
+
 
 There were also little ancillariy analyses that we did, for example, looking at Robinson-Foulds distances between trees. These aren't the main thrust of the paper and are provided as iPython notebooks.
 
@@ -35,7 +38,7 @@ Then, we time-scale the trees. Pyron and Burbink used [treePL](https://github.co
 
 If you don't want to bother with these two long steps, the trees are in the Trees directory of the repository.
 
-You can do this in a couple ways, from my repository. The easiest is to open a terminal, change directories into the repository and type 'make'. This will output for you results of BiSSE's parameter fitting as csv files and newick strings of the trees with the marginal likelihoods of ancestral states written to the nodes. You can then visualize these trees in FigTree or your preferred tree-viewing software.
+You can run BiSSE in a couple ways, from my repository. The easiest is to open a terminal, change directories into the repository and type 'make'. This will output for you results of BiSSE's parameter fitting as csv files and newick strings of the trees with the marginal likelihoods of ancestral states written to the nodes. You can then visualize these trees in FigTree or your preferred tree-viewing software.
 
 ##Goal Two: Parameter Sampling
 
@@ -52,9 +55,9 @@ We just provided the PAUP file for this. Donezo.
 
 This paper was a massive effort. I didn't anticipate how big of an undertaking it would be just to do the research. But I was strongly motivated by pedagogy - a new student in my lab wanted to learn computation, and she really took ownership of this project. She stepped up, and that made it easy for me to step up on a non-dissetation project in my last year of grad school while pregnant.  See her post in the coming days about learning by doing.
 
-About the reproducibility ... I intended to do more. But, right now, I have a paper in review that I'm massively proud of. You can reproduce it. Katie learned a lot. I learned some skills I wanted (make, mostly) and made some resources I think will be helpful for novice users. 
+About the reproducibility ... I intended to do more. But, right now, I have a paper in review that I'm massively proud of. You can reproduce it. Katie learned a lot. I learned some skills I wanted (make, mostly) and made some resources I think will be helpful for novice users. I'm not a martyr to reproducibility: I'm going to do the best job that I can on it and go home at the end of the day. And that's what I'd like readers, esecially novice readers to take away: your project doesn't need to be perfectly, fully reproducible to be useful. Do your best. Learn something new. Don't get bogged down in the fear that the Twitterverse will chuckle at your puny attempt at a pipeline.
 
-Good enough. I deserve a beer. Maybe next month.
+Do good enough. I did. I deserve a beer. Maybe next month.
 
 
  
