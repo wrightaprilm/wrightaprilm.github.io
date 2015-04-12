@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Wrighting April</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="http://wrightaprilm.github.io/theme/css/main.css" type="text/css" />
+        <link href="http://wrightaprilm.github.io/" type="application/atom+xml" rel="alternate" title="Wrighting April ATOM Feed" />
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="http://wrightaprilm.github.io/css/ie.css"/>
+                <script src="http://wrightaprilm.github.io/js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="http://wrightaprilm.github.io/css/ie6.css"/><![endif]-->
+
+</head>
+
+<body>
+        
+        
+
+            <header>
+                <h1><a href="http://wrightaprilm.github.io/posts/parity-paper.html" id="page-title">Cutting Yourself Some Slack</a></h1>
+<time datetime="2015-04-12T10:18:00">Sun 12 April 2015</time>            </header>
+
+            <article>
+                <p>I recently submitted a paper I'd like to talk about a little bit. We did a reanalysis of a previously-published dataset from Pyron and Burbrink <a href="http://onlinelibrary.wiley.com/doi/10.1111/ele.12168/full">2014</a>. This paper assembled a really impressive dataset of squamate parity modes and performed some comparative methods analysis with them. We wanted to look at how phylogenetic uncertainty and model assumptions affect the conclusion reached. </p>
+<p>Today, I'm writing a little about the reproducibility of the paper.</p>
+<h1>Motivation</h1>
+<p><em>In Writing This:</em> A few people have pointed out recently that open science has kind of an image problem. And I fully agree. From reading Twitter about open science, you'd get the impression that if you don't use the latest tools and your pipeline isn't perfect, and you can't just type 'make' and have the full paper spit back at you from the command line, then you aren't doing it right. </p>
+<p>Not true, and that's a really alienating message. There's a very tech-y modality to a lot of the discussions of open science, but in my experience, a lot of people are quietly and contentedly practicing openness and are <em>really happy</em> to be nice to new practitioners. I came up in a <a href="http://www.zo.utexas.edu/faculty/antisense/">lab</a> where it was expected that you provide everything a person would need to reproduce the paper, even if the journal makes no provisions for that. Lab alums have gone on to release free and open source software prodigiously. Many are involved with generating <a href="http://treethinkers.org">permissively-licensed</a> and <a href="https://molevol.mbl.edu/index.php/Main_Page">fully archived</a> teaching materials and tutorials. It never occurred to me to do science another way, really. You can do good work, and open work, without breaking your back. This post is fundamentally about <em>striking the right balance for you.</em></p>
+<p><em>In using the tools I used:</em> I had never written a Makefile before and wanted to try. That's all really. I had read about using them for <a href="https://ropensci.org/blog/2014/06/09/reproducibility/">reproducibility</a>, and they seemed useful. What I did is not <em>full</em> reproducibility, in the sense that you type make and are left with a figure, but you type make, get some numbers and use an iPython notebook to plot them. As we simplified the paper, the Makefiles got simpler, so the ones attached to the final paper might actually be basic enough for an intro user to grasp. And I'm all about novice resources.</p>
+<p>The <a href="http://ipython.org/notebook.html">iPython Notebook</a> is a really great tool to make code easy-to-use for collaborators and novices. Since I was working with my labmate, Katie Lyons, who was a total novice at computation, I wanted to make sure the scripts were easy for her to follow. In an iPython notebook, code is held in a cell. The user executes the cell and sees the output. This is especially nice for graphics -  you run your code and your graph shows up, in the window, in full color. You can make very easy-to-see, easy-to-use interactive documents in this way.</p>
+<h1>What we did</h1>
+<p>The paper had three main analysis:
+1) Running <a href="http://www.zoology.ubc.ca/~fitzjohn/diversitree.docs/">BiSSE</a> on four time-scaled phylogenetic trees to look at the effect of topology and branch length on the conclusions reached.</p>
+<p>2) Running BiSSE on each of these trees with a variety of parameters to look at the effects of the exact model settings on the conclusion reached.</p>
+<p>3) Using <a href="http://paup.csit.fsu.edu/">PAUP</a> to count changes in parity mode on the tree.</p>
+<p>There were also little ancillary analyses that we did, for example, looking at Robinson-Foulds distances between trees. These aren't the main thrust of the paper and are provided as iPython notebooks.</p>
+<h2>Goal One: Run BiSSE on a few trees</h2>
+<p>Easy enough. We made trees using Examl and garli. The estimations for these trees are quite long - about a week - so we didn't include this step in any of the makefiles. I'm sure I could have beat my head against a wall figuring out a solution to the long estimation problem, but ... well, that really didn't seem worth it. The configuration files for tree-building software can be found in <a href="http://wrightaprilm.github.io/ParityPaper/">our materials</a> under PhylogenyMaking. </p>
+<p>Then, we time-scale the trees. Pyron and Burbrink used <a href="https://github.com/blackrim/treePL">treePL</a> for this and since we're reproducing their work, we did too. TreePL is kind of finicky about where it compiles. I found that using the Linux instructions in a clean Vagrant box with Ubuntu 12 is the easiest way to do this. </p>
+<p>If you don't want to bother with these two long steps, the trees are in the Trees directory of the repository.</p>
+<p>You can run BiSSE on our trees in a couple ways, from my repository. The easiest is to open a terminal, change directories into the repository and type 'make'. This will output for you results of BiSSE's parameter fitting as csv files and newick strings of the trees with the marginal likelihoods of ancestral states written to the nodes. You can then visualize these trees in FigTree or your preferred tree-viewing software.</p>
+<h2>Goal Two: Parameter Sampling</h2>
+<p>Pyron and Burbrink used a sampling parameter we weren't sure we understood the function of. So we did an exercise in which we sampled many values of this parameter and made a heatmap to look at how this changed the probability of the ancestor of all squamates being viviparous. </p>
+<p>If you type 'make -f Makefileheat', this analysis will run on your computer. However, it makes a lot of replicates and takes a long time. I wouldn't actually do it. You can find my heatmap data in the Data directory, and the interactive heatmapping script in the iPython notebooks. This script illustrates well what I meant about iPython notebooks being really nice for graphics earlier.</p>
+<h2>Goal Three</h2>
+<p>We just provided the PAUP file for this. Donezo.</p>
+<h1>How I feel about it</h1>
+<p>This paper was a massive effort. I didn't anticipate how big of an undertaking it would be just to do the research. But I was strongly motivated by pedagogy - a new student in my lab wanted to learn computation, and she really took ownership of this project. She stepped up, and that made it easy for me to step up on a non-dissertation project in my last year of grad school, while pregnant.  See her post in the coming days about learning by doing.</p>
+<p>About the reproducibility ... I intended to do more. I intended to pipe together the R and Python better. But, right now, I have a paper in review that I'm massively proud of. You can reproduce it. Katie learned a lot. I learned some skills I wanted (make, mostly) and made some resources I think will be helpful for novice users. We have a product that is reproducible <em>enough</em> for my needs and the needs of my colleagues. And that's what I'd like readers, especially novice readers to take away: your project doesn't need to be perfectly, fully reproducible to be <em>useful</em>. You don't need to devote less time to your other projects in order to make the perfect pipeline. Do good science. Do your best. Learn something new. Don't get bogged down in the fear that the Twitterverse will chuckle at your puny attempt at reproducibility.</p>
+<p>Do good enough. I did good science, I made it accessible, I learned some new tricks and I helped a new student learn some foundational computing skills. I deserve a beer. Maybe next month:) </p>
+<p><em>Many thanks to Greg Wilson for comments</em></p><p>There are <a href="http://wrightaprilm.github.io/parity-paper.html#disqus_thread">comments</a>.</p>            </article>
+                <section id="article-list">
+                    <h2>All posts</h2>
+                    <ol>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/treeset.html" rel="bookmark" title="Permalink to TreeSetViz">TreeSetViz</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/conferences.html" rel="bookmark" title="Permalink to Conference Survival">Conference Survival</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/svp-2014.html" rel="bookmark" title="Permalink to SVP 2014 talks and workshops">SVP 2014 talks and workshops</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/make-appointments.html" rel="bookmark" title="Permalink to #BabyAndPhD2015">#BabyAndPhD2015</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/TTU-swc.html" rel="bookmark" title="Permalink to Texas Tech Bootcamp">Texas Tech Bootcamp</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/help-out.html" rel="bookmark" title="Permalink to Solicitation on flipping the script">Solicitation on flipping the script</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/lonely.html" rel="bookmark" title="Permalink to Thoughts on my first programming conference">Thoughts on my first programming conference</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/ccbb-wrap.html" rel="bookmark" title="Permalink to CCBB Wrap-Up">CCBB Wrap-Up</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/day-one.html" rel="bookmark" title="Permalink to CCBB Day One">CCBB Day One</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/seeing-clearly.html" rel="bookmark" title="Permalink to Seeing clearly">Seeing clearly</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/CCBB.html" rel="bookmark" title="Permalink to Test-Driven Development for Novices">Test-Driven Development for Novices</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/hello-ladies.html" rel="bookmark" title="Permalink to Hello Ladies">Hello Ladies</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/pars-ev.html" rel="bookmark" title="Permalink to Parsing Evaluations">Parsing Evaluations</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/evals.html" rel="bookmark" title="Permalink to Wrighting Evaluations">Wrighting Evaluations</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/SSC-wrap.html" rel="bookmark" title="Permalink to SSC Wrap-Up">SSC Wrap-Up</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/SSC-short.html" rel="bookmark" title="Permalink to SSC Python Course">SSC Python Course</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/novices.html" rel="bookmark" title="Permalink to On Novices">On Novices</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/welcome.html" rel="bookmark" title="Permalink to Welcome!">Welcome!</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/hello-world.html" rel="bookmark" title="Permalink to Hello World">Hello World</a></li>
+    </ol>
+    </section><!-- #article-list -->
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>:: <a href="http://wrightaprilm.github.io/categories.html">Categories</a></li>
+                </ul>
+            </nav>
+                <p id="theme-credit"><a href="http://mathieu.agopian.info/mnmlist/theme.html">Thème mnmlist</a></p>
+        </footer>
+
+<script type="text/javascript">
+    var disqus_shortname = 'wrightaprilm';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>

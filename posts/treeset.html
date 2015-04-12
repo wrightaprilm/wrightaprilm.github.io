@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Wrighting April : TreeSetViz</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="http://wrightaprilm.github.io/theme/css/main.css" type="text/css" />
+        <link href="http://wrightaprilm.github.io/" type="application/atom+xml" rel="alternate" title="Wrighting April ATOM Feed" />
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="http://wrightaprilm.github.io/css/ie.css"/>
+                <script src="http://wrightaprilm.github.io/js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="http://wrightaprilm.github.io/css/ie6.css"/><![endif]-->
+
+</head>
+
+<body>
+        
+<header>
+    <h1><a href="http://wrightaprilm.github.io" id="site-title">Wrighting April </a> :
+        <a href="http://wrightaprilm.github.io/treeset.html" id="page-title">TreeSetViz</a></h1>
+<time datetime="2015-03-11T12:15:00">Wed 11 March 2015</time></header>
+<article>
+    <p>Some of you may be familiar with <a href="http://mesquiteproject.org/packages/tsv/">TreeSetViz</a>. This is a software developed by a team of computer scientists and biologists working in tandem to make it easier to view the treespace explored by an MCMC run. You can read the original paper <a href="http://www.zo.utexas.edu/faculty/antisense/papers/Hillisetal2005TreeSpace.pdf">here</a>. It's a very useful piece of software that has, regrettably, fallen off a bit in terms of maintenance. I recently needed to use it, and decided to put some instructions here because I will forget how I accomplished my work, and for some reason, finding things on the internet is presisantly easier than on my computer or desk.</p>
+<p><em>Task:</em> Overlay the output of two MCMC runs on top of each other, and color points by which run produces them. </p>
+<p>First, you need a copy of Mesquite. I am on Ubuntu which, while I love it, has some quirks. So I needed to install <a href="http://mesquiteproject.wikispaces.com/History+of+Mesquite">Mesquite 2.72</a>. </p>
+<p>Second, open Mesquite. If you're on a Mac or Windows, this might be as simple as clicking the Mesquite icon. Ubuntu didn't make an icon. So I navigated into the folder in the terminal, and typed:</p>
+<div class="highlight"><pre><span class="p">.</span><span class="o">/</span><span class="n">run_mesquite</span><span class="p">.</span><span class="n">sh</span>
+</pre></div>
+
+
+<p>It will then boot for a little bit. Mesquite has a lot of cool features, and you can see the default modules as it loads.</p>
+<p>Once Mesquite has booted, open the <em>File</em> menu. Navigate to <em>Check for Notices/Installs</em>. A dialog box will pop up. In it, enter:
+http://mesquiteproject.org/packages/tsv/install.xml</p>
+<p>to install TreeSetViz. Restart your computer completely.</p>
+<p>Once rebooted, reopen Mesquite. You may want to change the amount of memory Mesquite has available to it. To look at 1000 trees, I started Mesquite as:</p>
+<div class="highlight"><pre>   <span class="n">java</span>  <span class="o">-</span><span class="n">Xmx2500M</span> <span class="o">-</span><span class="n">Xss4m</span> <span class="o">-</span><span class="n">Djava</span><span class="p">.</span><span class="n">library</span><span class="p">.</span><span class="n">path</span><span class="o">=</span><span class="n">lib</span> <span class="o">-</span><span class="n">cp</span> <span class="p">.</span> <span class="n">mesquite</span><span class="p">.</span><span class="n">Mesquite</span>
+</pre></div>
+
+
+<p>Once Mesquite is open, initialize a new project. I initialized my project with the consensus topology from one of my MCMC runs so I could be sure that I had the correct taxon information. I did this by chooing <em>File</em> &gt; <em>Open New File</em> and navigating to my tree.</p>
+<p>Now, you can add your tree samples. If you've correctly opened a file, you should now have a Project Window. From the Project Window, you can do all kinds of tree-based operations. Under <em>Taxa&amp;Trees</em>, choose <em>Make New Trees Block From</em> &gt; <em>Sample Trees From Separate Nexus File</em>. Choose you nexus file. It will count all the trees for a minute, then ask how many you'd like to load. I used 500. It will then ask if any trees should be skipped; I skipped the burnin period.</p>
+<p>Repeat this for your second sample.</p>
+<p>Now is where things get a little tricky. Under <em>Taxa&amp;Trees</em>, choose <em>TreeSetVisualization</em>. A window will pop up asking which trees to use. Choose <em>Concatenate Trees from Two Sources</em>. Select your first block of trees and click OK. Then do the same for the second. TSV will now ask you for some TSV-specific info about consensus trees and between-tree metrics. Choose whichever makes sense for your data. I used a majority-rule consensus tree and Robinson-Foulds as teh between tree metric.</p>
+<p>TSV will now calculate the metrics between trees. This will take a minute.</p>
+<p>Once everything is loaded in, click 'Start MDS' to run the scaling described in the Hillis paper. Now you have a set of trees, all of which are scaled uniformly.  But you want to see which run is which!</p>
+<p>So, under <em>Visualization</em>, click <em>Color Points By</em>. This is what lost me for a while: you want the <em>Attached Value</em> option. It colors by which tree source each tree comes from.</p>
+<p>That's it! Easy!</p>
+<p><img alt="Alt text" src="../output/TreeSet.png" title="Optional title" /></p>
+</article>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>:: <a href="http://wrightaprilm.github.io/categories.html">Categories</a></li>
+                </ul>
+            </nav>
+                <p id="theme-credit"><a href="http://mathieu.agopian.info/mnmlist/theme.html">Thème mnmlist</a></p>
+        </footer>
+
+<script type="text/javascript">
+    var disqus_shortname = 'wrightaprilm';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
