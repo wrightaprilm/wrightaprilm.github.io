@@ -6,7 +6,7 @@ Authors: April Wright
 
 
 
-This week, I taught a Software Carpentry Workshop with Fany Yang and Auriel Fournier for intermediate learners in mechanical engineering. It had been a while since I worked with intermediate learners, but I think we all had a really good time!
+This week, I taught a Software Carpentry Workshop with Fan Yang and Auriel Fournier for intermediate learners in mechanical engineering. It had been a while since I worked with intermediate learners, but I think we all had a really good time!
 
 What worked:
 
