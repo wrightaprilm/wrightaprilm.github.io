@@ -4,7 +4,7 @@
         <title>Wrighting April - April Wright</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="http://wrightaprilm.github.io/theme/css/main.css" type="text/css" />
-
+        <link href="http://wrightaprilm.github.io/" type="application/atom+xml" rel="alternate" title="Wrighting April ATOM Feed" />
 
         <!--[if IE]>
                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -19,134 +19,113 @@
 </head>
 
 <body>
-   
-<link rel="alternate" type="application/atom+xml" title="Atom" href="http://wrightaprilm.github.io/output/feeds/index.xml" />    
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://wrightaprilm.github.io/output/feeds/indexrss.xml" />      
+        
         
 
             <header>
-                <h1><a href="http://wrightaprilm.github.io/output/treeset.html" id="page-title">TreeSetViz</a></h1>
+                <h1><a href="http://wrightaprilm.github.io/isu-nov-wrap.html" id="page-title">ISU November SWC Wrap-Up</a></h1>
                 <span id="sitename"><a href="http://wrightaprilm.github.io" id="site-title">Wrighting April </a> &sdot;</span>
-<time datetime="2015-03-11T12:15:00">Wed 11 March 2015</time>            </header>
+<time datetime="2015-11-19T10:40:00+01:00">Thu 19 November 2015</time>            </header>
 
             <article>
-                <p>Some of you may be familiar with <a href="http://mesquiteproject.org/packages/tsv/">TreeSetViz</a>. This is a software developed by a team of computer scientists and biologists working in tandem to make it easier to view the treespace explored by an MCMC run. You can read the original paper <a href="http://www.zo.utexas.edu/faculty/antisense/papers/Hillisetal2005TreeSpace.pdf">here</a>. It's a very useful piece of software that has, regrettably, fallen off a bit in terms of maintenance. I recently needed to use it, and decided to put some instructions here because I will forget how I accomplished my work, and for some reason, finding things on the internet is presisantly easier than on my computer or desk.</p>
-<p><em>Task:</em> Overlay the output of two MCMC runs on top of each other, and color points by which run produces them. </p>
-<p>First, you need a copy of Mesquite. I am on Ubuntu which, while I love it, has some quirks. So I needed to install <a href="http://mesquiteproject.wikispaces.com/History+of+Mesquite">Mesquite 2.72</a>. </p>
-<p>Second, open Mesquite. If you're on a Mac or Windows, this might be as simple as clicking the Mesquite icon. Ubuntu didn't make an icon. So I navigated into the folder in the terminal, and typed:</p>
-<div class="highlight"><pre><span class="p">.</span><span class="o">/</span><span class="n">run_mesquite</span><span class="p">.</span><span class="n">sh</span>
-</pre></div>
-
-
-<p>It will then boot for a little bit. Mesquite has a lot of cool features, and you can see the default modules as it loads.</p>
-<p>Once Mesquite has booted, open the <em>File</em> menu. Navigate to <em>Check for Notices/Installs</em>. A dialog box will pop up. In it, enter:
-http://mesquiteproject.org/packages/tsv/install.xml</p>
-<p>to install TreeSetViz. Restart your computer completely.</p>
-<p>Once rebooted, reopen Mesquite. You may want to change the amount of memory Mesquite has available to it. To look at 1000 trees, I started Mesquite as:</p>
-<div class="highlight"><pre>   <span class="n">java</span>  <span class="o">-</span><span class="n">Xmx2500M</span> <span class="o">-</span><span class="n">Xss4m</span> <span class="o">-</span><span class="n">Djava</span><span class="p">.</span><span class="n">library</span><span class="p">.</span><span class="n">path</span><span class="o">=</span><span class="n">lib</span> <span class="o">-</span><span class="n">cp</span> <span class="p">.</span> <span class="n">mesquite</span><span class="p">.</span><span class="n">Mesquite</span>
-</pre></div>
-
-
-<p>Once Mesquite is open, initialize a new project. I initialized my project with the consensus topology from one of my MCMC runs so I could be sure that I had the correct taxon information. I did this by chooing <em>File</em> &gt; <em>Open New File</em> and navigating to my tree.</p>
-<p>Now, you can add your tree samples. If you've correctly opened a file, you should now have a Project Window. From the Project Window, you can do all kinds of tree-based operations. Under <em>Taxa&amp;Trees</em>, choose <em>Make New Trees Block From</em> &gt; <em>Sample Trees From Separate Nexus File</em>. Choose you nexus file. It will count all the trees for a minute, then ask how many you'd like to load. I used 500. It will then ask if any trees should be skipped; I skipped the burnin period.</p>
-<p>Repeat this for your second sample.</p>
-<p>Now is where things get a little tricky. Under <em>Taxa&amp;Trees</em>, choose <em>TreeSetVisualization</em>. A window will pop up asking which trees to use. Choose <em>Concatenate Trees from Two Sources</em>. Select your first block of trees and click OK. Then do the same for the second. TSV will now ask you for some TSV-specific info about consensus trees and between-tree metrics. Choose whichever makes sense for your data. I used a majority-rule consensus tree and Robinson-Foulds as teh between tree metric.</p>
-<p>TSV will now calculate the metrics between trees. This will take a minute.</p>
-<p>Once everything is loaded in, click 'Start MDS' to run the scaling described in the Hillis paper. Now you have a set of trees, all of which are scaled uniformly.  But you want to see which run is which!</p>
-<p>So, under <em>Visualization</em>, click <em>Color Points By</em>. This is what lost me for a while: you want the <em>Attached Value</em> option. It colors by which tree source each tree comes from.</p>
-<p>That's it! Easy!</p>
-<p><img alt="Alt text" src="../output/TreeSet.png" title="Optional title" /></p><p>There are <a href="http://wrightaprilm.github.io/posts/treeset.html#disqus_thread">comments</a>.</p>            </article>
+                <p><em>Note: Post co-authored with Fan Yang and Auriel Fournier.</em></p>
+<p>This week, I taught a Software Carpentry Workshop with Fan Yang and Auriel Fournier for intermediate learners in mechanical engineering. It had been a while since I worked with intermediate learners, but I think we all had a really good time!</p>
+<p>What worked:</p>
+<ul>
+<li>Class size: This was one of the smaller SWC workshops I've [AMW] been a part of. We had about 27 learners, and three instructors. All the instructors had some proficiency in each topic. This was a very good ratio, and we were able to help learners effectively.</li>
+<li>Class composition: The learners knew each other and felt comfortable asking their classmates for help. This meant that more advanced students were confirming their own knowledge through helping others, and less advanced students never had to wait for an instructor.</li>
+<li>Extra time with git: Intermediate learners need less of the syntax of languages and commands, and more information on the best practices. Spending more time on doing a merge, and doing a hands-on example gives them more practice with the skills that will be important in their development.</li>
+<li>About 15 minutes into the Unix lesson I [AMVF] realized that for many in the room this was review, and they seemed bored. This wasn't the best foot to start the workshop on since I didn't want to lose them right away, so I trimmed the lesson down as we went to make sure everyone got the base level but we didn't bore the others. </li>
+</ul>
+<p>What didn't:</p>
+<ul>
+<li>Make: The Windows Installer wasn't working for Make. Our audience was about two-thirds Windows. So I [AMW] wrote an emergency lesson to plug the gap. I pulled some material from the UT biocomputing course [link] and some from the Data Carpentry Data as Read-Only lesson. The result was a lesson where we talked a bit about the os module and creating directories on the fly in Python, data management, and importing your own scripts as modules. I think this was useful, and would love to work with a partner to make this into a more complete lesson. </li>
+<li>Trying to go off-script: I [AMW] am just not that good at saying 'Hey, good question, let's try that!'. I should say 'Hey, good question, come see me after.' I know I should.</li>
+<li>The room. I should have gone over to check out the power situation. We didn't have enough outlets.</li>
+<li>I [AMVF] had some major computer problems right before the workshop and used a friend's laptop to teach from, and didn't spend enough time checking to make sure I had everything installed, which caused a few hiccups. </li>
+<li>I [AMVF] should have spent more time reviewing general expressions so I could explain the WHY of the example I showed. </li>
+</ul><p>There are <a href="http://wrightaprilm.github.io/isu-nov-wrap.html#disqus_thread">comments</a>.</p>            </article>
                 <section id="article-list">
-                    <h2>Previously on Wrighting April...</h2>
+                    <h2>Tous les articles</h2>
                     <ol>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/conferences.html" rel="bookmark" title="Permalink to Conference Survival">Conference Survival</a></li>
+            <li><a href="http://wrightaprilm.github.io/parity-paper.html" rel="bookmark" title="Permalink to Reproducibility and Cutting Yourself Some Slack">Reproducibility and Cutting Yourself Some Slack</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/svp-2014.html" rel="bookmark" title="Permalink to SVP 2014 talks and workshops">SVP 2014 talks and workshops</a></li>
+            <li><a href="http://wrightaprilm.github.io/conferences.html" rel="bookmark" title="Permalink to Conference Survival">Conference Survival</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/make-appointments.html" rel="bookmark" title="Permalink to #BabyAndPhD2015">#BabyAndPhD2015</a></li>
+            <li><a href="http://wrightaprilm.github.io/svp-2014.html" rel="bookmark" title="Permalink to SVP 2014 talks and workshops">SVP 2014 talks and workshops</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/TTU-swc.html" rel="bookmark" title="Permalink to Texas Tech Bootcamp">Texas Tech Bootcamp</a></li>
+            <li><a href="http://wrightaprilm.github.io/make-appointments.html" rel="bookmark" title="Permalink to #BabyAndPhD2015">#BabyAndPhD2015</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/help-out.html" rel="bookmark" title="Permalink to Solicitation on flipping the script">Solicitation on flipping the script</a></li>
+            <li><a href="http://wrightaprilm.github.io/TTU-swc.html" rel="bookmark" title="Permalink to Texas Tech Bootcamp">Texas Tech Bootcamp</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/lonely.html" rel="bookmark" title="Permalink to Thoughts on my first programming conference">Thoughts on my first programming conference</a></li>
+            <li><a href="http://wrightaprilm.github.io/help-out.html" rel="bookmark" title="Permalink to Solicitation on flipping the script">Solicitation on flipping the script</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/ccbb-wrap.html" rel="bookmark" title="Permalink to CCBB Wrap-Up">CCBB Wrap-Up</a></li>
+            <li><a href="http://wrightaprilm.github.io/lonely.html" rel="bookmark" title="Permalink to Thoughts on my first programming conference">Thoughts on my first programming conference</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/day-one.html" rel="bookmark" title="Permalink to CCBB Day One">CCBB Day One</a></li>
+            <li><a href="http://wrightaprilm.github.io/ccbb-wrap.html" rel="bookmark" title="Permalink to CCBB Wrap-Up">CCBB Wrap-Up</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/seeing-clearly.html" rel="bookmark" title="Permalink to Seeing clearly">Seeing clearly</a></li>
+            <li><a href="http://wrightaprilm.github.io/day-one.html" rel="bookmark" title="Permalink to CCBB Day One">CCBB Day One</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/CCBB.html" rel="bookmark" title="Permalink to Test-Driven Development for Novices">Test-Driven Development for Novices</a></li>
+            <li><a href="http://wrightaprilm.github.io/seeing-clearly.html" rel="bookmark" title="Permalink to Seeing clearly">Seeing clearly</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/hello-ladies.html" rel="bookmark" title="Permalink to Hello Ladies">Hello Ladies</a></li>
+            <li><a href="http://wrightaprilm.github.io/CCBB.html" rel="bookmark" title="Permalink to Test-Driven Development for Novices">Test-Driven Development for Novices</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/pars-ev.html" rel="bookmark" title="Permalink to Parsing Evaluations">Parsing Evaluations</a></li>
+            <li><a href="http://wrightaprilm.github.io/hello-ladies.html" rel="bookmark" title="Permalink to Hello Ladies">Hello Ladies</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/evals.html" rel="bookmark" title="Permalink to Wrighting Evaluations">Wrighting Evaluations</a></li>
+            <li><a href="http://wrightaprilm.github.io/pars-ev.html" rel="bookmark" title="Permalink to Parsing Evaluations">Parsing Evaluations</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/SSC-wrap.html" rel="bookmark" title="Permalink to SSC Wrap-Up">SSC Wrap-Up</a></li>
+            <li><a href="http://wrightaprilm.github.io/evals.html" rel="bookmark" title="Permalink to Wrighting Evaluations">Wrighting Evaluations</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/SSC-short.html" rel="bookmark" title="Permalink to SSC Python Course">SSC Python Course</a></li>
+            <li><a href="http://wrightaprilm.github.io/SSC-wrap.html" rel="bookmark" title="Permalink to SSC Wrap-Up">SSC Wrap-Up</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/novices.html" rel="bookmark" title="Permalink to On Novices">On Novices</a></li>
+            <li><a href="http://wrightaprilm.github.io/SSC-short.html" rel="bookmark" title="Permalink to SSC Python Course">SSC Python Course</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/welcome.html" rel="bookmark" title="Permalink to Welcome!">Welcome!</a></li>
+            <li><a href="http://wrightaprilm.github.io/novices.html" rel="bookmark" title="Permalink to On Novices">On Novices</a></li>
         
 
  
-            <li><a href="http://wrightaprilm.github.io/posts/hello-world.html" rel="bookmark" title="Permalink to Hello World">Hello World</a></li>
+            <li><a href="http://wrightaprilm.github.io/welcome.html" rel="bookmark" title="Permalink to Welcome!">Welcome!</a></li>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/hello-world.html" rel="bookmark" title="Permalink to Hello World">Hello World</a></li>
     </ol>
     </section><!-- #article-list -->
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Wrighting April</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="wrightaprilm.github.io" property="cc:attributionName" rel="cc:attributionURL">April Wright</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-
-
-        <footer>
-            <nav>
-                <ul>
-		<li>:: <a href="http://wrightaprilm.github.io/pages/about_me.html">About Me</a></li>
-		<li>:: <a href="http://wrightaprilm.github.io/pages/courses-taught.html">Teaching</a></li>		 
-                <li>:: <a href="http://wrightaprilm.github.io/pages/tags.html">Tags</a></li>
-		 <li>:: <a href="http://wrightaprilm.github.io/pages/archives.html">Archives</a></li>
-
-
-                </ul>
-            </nav>
 
         <footer>
             <nav>
@@ -166,8 +145,5 @@ http://mesquiteproject.org/packages/tsv/install.xml</p>
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-            <li><a href="http://wrightaprilm.github.io/index.xml" rel="alternate">Atom feed</a></li>
-            <li><a href="http://wrightaprilm.github.io/indexrss.xml" rel="alternate">RSS feed</a></li>
-
 </body>
 </html>

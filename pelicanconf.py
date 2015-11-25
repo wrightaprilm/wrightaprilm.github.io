@@ -19,7 +19,7 @@ TRANSLATION_FEED_ATOM = None
 # Blogroll
 GITHUB_LINK='https://github.com/wrightaprilm'
 DISQUS_SITENAME='wrightaprilm'
-THEME = '/home/april/pelican-themes/nmnlist/'
+THEME = '/Users/amwright/pelican-themes/nmnlist/'
 # Social widget
 SOCIAL = (('Twitter', 'twitter.com/wrightingapril'),
           ('Github', 'https://github.com/wrightaprilm'),)
