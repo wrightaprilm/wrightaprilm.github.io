@@ -23,31 +23,47 @@
         
 
             <header>
-                <h1><a href="http://wrightaprilm.github.io/isu-nov-wrap.html" id="page-title">ISU November SWC Wrap-Up</a></h1>
+                <h1><a href="http://wrightaprilm.github.io/morph-paper.html" id="page-title">Modeling character change heterogeneity in phylogenetic analyses of morphology through the use of priors</a></h1>
                 <span id="sitename"><a href="http://wrightaprilm.github.io" id="site-title">Wrighting April </a> &sdot;</span>
-<time datetime="2015-11-19T10:40:00+01:00">Thu 19 November 2015</time>            </header>
+<time datetime="2016-01-04T12:58:00+01:00">Mon 04 January 2016</time>            </header>
 
             <article>
-                <p><em>Note: Post co-authored with Fan Yang and Auriel Fournier.</em></p>
-<p>This week, I taught a Software Carpentry Workshop with Fan Yang and Auriel Fournier for intermediate learners in mechanical engineering. It had been a while since I worked with intermediate learners, but I think we all had a really good time!</p>
-<p>What worked:</p>
-<ul>
-<li>Class size: This was one of the smaller SWC workshops I've [AMW] been a part of. We had about 27 learners, and three instructors. All the instructors had some proficiency in each topic. This was a very good ratio, and we were able to help learners effectively.</li>
-<li>Class composition: The learners knew each other and felt comfortable asking their classmates for help. This meant that more advanced students were confirming their own knowledge through helping others, and less advanced students never had to wait for an instructor.</li>
-<li>Extra time with git: Intermediate learners need less of the syntax of languages and commands, and more information on the best practices. Spending more time on doing a merge, and doing a hands-on example gives them more practice with the skills that will be important in their development.</li>
-<li>About 15 minutes into the Unix lesson I [AMVF] realized that for many in the room this was review, and they seemed bored. This wasn't the best foot to start the workshop on since I didn't want to lose them right away, so I trimmed the lesson down as we went to make sure everyone got the base level but we didn't bore the others. </li>
-</ul>
-<p>What didn't:</p>
-<ul>
-<li>Make: The Windows Installer wasn't working for Make. Our audience was about two-thirds Windows. So I [AMW] wrote an emergency lesson to plug the gap. I pulled some material from the UT biocomputing course [link] and some from the Data Carpentry Data as Read-Only lesson. The result was a lesson where we talked a bit about the os module and creating directories on the fly in Python, data management, and importing your own scripts as modules. I think this was useful, and would love to work with a partner to make this into a more complete lesson. </li>
-<li>Trying to go off-script: I [AMW] am just not that good at saying 'Hey, good question, let's try that!'. I should say 'Hey, good question, come see me after.' I know I should.</li>
-<li>The room. I should have gone over to check out the power situation. We didn't have enough outlets.</li>
-<li>I [AMVF] had some major computer problems right before the workshop and used a friend's laptop to teach from, and didn't spend enough time checking to make sure I had everything installed, which caused a few hiccups. </li>
-<li>I [AMVF] should have spent more time reviewing general expressions so I could explain the WHY of the example I showed. </li>
-</ul><p>There are <a href="http://wrightaprilm.github.io/isu-nov-wrap.html#disqus_thread">comments</a>.</p>            </article>
+                <p><em>Note: Post written with input form David Hillis</em>
+<a href="http://graemetlloyd.com/">Graeme Lloyd</a>, <a href="http://www.zo.utexas.edu/faculty/antisense/">David Hillis</a> and I have a <a href="http://sysbio.oxfordjournals.org/content/early/2015/12/22/sysbio.syv122.abstract">new paper</a> out. This paper, "Modeling character change heterogeneity in phylogenetic analyses of morphology through the use of priors", looks at using a prior in MrBayes, the symmetric Dirichlet hyperprior to model character change asymmetry. In the Lewis' <a href="http://sysbio.oxfordjournals.org/content/50/6/913">Mk model</a> of evolution for morphological characters, it is assumed that a character is as likely to transition forward and backwards - i.e., it is as likely to be lost as is to be gained. We can all think of cases where this is not true.</p>
+<p>So we had a look using at a prior distribution for character change that allows us to relax this assumption. Relaxing this assumption for morphological data is trickier than with sequence data. With sequence data, we can define an expected rate of change from one nucleotide to another because we expect that a base at one site has pretty similar properties to that same base at another site. Not so with morphology. The relative rates of changes between states (gains versus losses, for example) may differ dramatically from one character to the next. In that light, it's very hard to define many commonalities across a whole data set. This is a big part of why we still use a Jukes-Cantor-like process to model morphology.</p>
+<p>Because the paper is currently paywalled (Systematic Biology papers, unless an open option is paid for, are paywalled for a year. I'm happy to discuss why I chose to publish this way), I will refer to some slides in my <a href="http://www.slideshare.net/wrightaprilm/defense-talk-slides">defense talk</a>, so every one can see the figures to which I am referring.</p>
+<p>The symmetric Dirichelet (hyper)prior is a (hyper)prior on state frequencies. It allows characters in a matrix to have varying equilibrium character frequencies. This, in turn, allows those characters to have different transition rates due to the relationship between number of expected changes and equilibrium frequency (slides 55-59). In the case of binary characters, a discrete beta distribution can be used as a prior on the state frequency. This distribution is constrained to be symmetric, meaning that if you have some characters with a high 0 to 1 transition probability, it is assumed you also have some with a high 1 to 0 probability (so it is important to randomize the assignment of states to 0 and 1). You can see different shapes of this prior on slides 60-68. </p>
+<p>The first thing we did was a little model-fitting on empirical datasets. We used fixed values for the symmetric Dirichlet -  we did not specify any distributions from which the parameter of the distribution is drawn (i.e., we used this as a prior, not a hyperprior). We used Bayes Factor comparisons to see if some datasets favored a prior that allows asymmetrical transitions between states. About half of the datasets we looked at did (slides 81-83)!  For many datasets, applying this change to the model made little or no difference to the tree estimated (slide 86-87). But for some, it mattered quite a lot. But with these empirical datasets, we don't know the true tree, so can't say that a different tree is necessariy <em>better</em>. </p>
+<p>So we turned to simulations. We simulated data according to four different parameterizations of the symmetric Dirichlet: one that conforms to the default Mk assumption of equal rates, one that favors this assumption, one that assumes characters will come from all possible values of asymmetry, and one that assumes characters will favor asymmetric transitions. We simulated along two trees, a simple eight-taxon tree and one empirical tree.</p>
+<p>Firstly, the generating model is highly detectable (slide 89), meaning we can use Bayes Factor model fitting to find the true model easily. This is good for empirical researchers! Detectable models are easier to not misspecify. </p>
+<p>Secondly, when the problem is easy, such as when we do not have missing data, choosing the right prior matters (slides 92-93). If your characters demonstrate strictly symmetrical transition rates between states, using a prior assumes the opposite causes your estimations to be pretty bad. But specifying a prior that doesn't punish this assumption severely doesn't hurt you that much.</p>
+<p>Lastly, <em>when the problem is hard, getting the prior right matters a lot</em>. On slides 96-98, what we see if that error is much higher when we have missing data (especially structured missing data) and model misspecification working in concert.</p>
+<h2>What's the bottom line?</h2>
+<p>Choosing the right prior matters for estimation of trees using the Mk model. How much it matters depends on how challenging your dataset is. But I highly encourage all of you to give using different values a whirl and to use Bayes Factor model fitting to choose the best-fit prior. I've made a <a href="http://wrightaprilm.github.io/Wrightetal2015SysBio/">website</a> for my paper. In the zip that you download, or the github repo linked there, you can find sample MrBayes blocks showing different priors to try out.</p>
+<p>Also in the repository (or zip file) is a script called test_symDir.py. This script can be called to calculate the likelihood of a character along a four-taxon with different values of the symmetric Dirichelt prior. For example, if you wanted to calculate the likleihood of this character under the symdirihyperpr = fixed(2), one of the simulation conditions, type:</p>
+<div class="highlight"><pre><span class="n">python</span> <span class="n">test_symDir</span><span class="o">.</span><span class="n">py</span> <span class="mi">2</span> <span class="mi">2</span>
+</pre></div>
+
+
+<p>and you should receive the output</p>
+<div class="highlight"><pre>pi0 ~ Beta(2.00000, 2.00000) divided into 5 equal-volume categories
+  categ 1: pi0 = 0.19580, pi1 = 0.80420, logLike = -3.51177
+  categ 2: pi0 = 0.36326, pi1 = 0.63674, logLike = -3.32104
+  categ 3: pi0 = 0.50000, pi1 = 0.50000, logLike = -3.29225
+  categ 4: pi0 = 0.63674, pi1 = 0.36326, logLike = -3.32104
+  categ 5: pi0 = 0.80420, pi1 = 0.19580, logLike = -3.51177
+log-likelihood = -3.38676984928
+</pre></div>
+
+
+<p>This helpful script, written by <a href="http://phylogeny.uconn.edu/">Dr. Paul Lewis</a>, illustrates how the prior affects character likelihoods. If you're still trying to wrap your head around the relationship between this prior and the results of an analysis, try playing with this script. The differences in likelihood score can be quite large for just this one character on a small tree. This script depends on the numpy and scipy libraries.</p><p>There are <a href="http://wrightaprilm.github.io/morph-paper.html#disqus_thread">comments</a>.</p>            </article>
                 <section id="article-list">
                     <h2>Tous les articles</h2>
                     <ol>
+        
+
+ 
+            <li><a href="http://wrightaprilm.github.io/isu-nov-wrap.html" rel="bookmark" title="Permalink to ISU November SWC Wrap-Up">ISU November SWC Wrap-Up</a></li>
         
 
  
