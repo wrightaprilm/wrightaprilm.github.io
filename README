@@ -1,0 +1,22 @@
+Files for Iowa State ddRADseq workshop
+Time: Weds, Jan 6. 1-5 pm
+Place: Bessey 255.
+
+*Install Instructions*: 
+All Platforms:
+
+You'll need the STACKS pipeline. http://catchenlab.life.illinois.edu/stacks/
+Download it and click through the installer.
+
+Linux:
+You already have a terminal and a plain-text editor. All you need is the Anaconda distribution of python (which has scipy, numpy and matplotlib): https://www.continuum.io/downloads
+Mac:
+
+Same as the Linux instructions. The native plain text editor isn't fantastic, so you may also want one, such as TextWrangler: http://www.barebones.com/products/textwrangler/
+
+Windows:
+
+Your job is unfortunately a little more involved. Install the Anaconda distribution of python linked above. If you have a UNIX/LINUX terminal emulator with which you're happy, then you don't need to install one. If you don't, or the previous sentence didn't make sense to you, install Git Bash: https://openhatch.org/missions/windows-setup/install-git-bash
+
+If you have a plain text editor with which you're happy, that's fine. If you need one, install BBEdit: http://www.barebones.com/products/bbedit/
+
